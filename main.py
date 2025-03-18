@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 from google.colab import files
-df = pd.read_excel('')
+uploaded = files.upload()
 
 os.listdir()
 
