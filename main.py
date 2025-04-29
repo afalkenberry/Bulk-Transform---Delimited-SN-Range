@@ -28,7 +28,7 @@ def generate_sn_range(sn_pairs):
     return all_sns
 
 # Store excel in dataframe
-df = pd.read_excel('')
+df = pd.read_excel('CN list2.xlsx')
 
 # Convert to list
 sn_pairs = list(zip(df['SN1'], df['SN2']))
@@ -49,4 +49,4 @@ print(f"Serial numbers have been exported to {output_file}")
 
 # Download exported excel file
 from google.colab import files
-files.download('Extracted_Serial_Numbers.xlsx')
+files.download('INFO_Extracted_Serial_Numbers.xlsx')
